@@ -29,9 +29,9 @@ Production Puppet modules
 
 %install
 %{__rm} -fr %{buildroot}
-%{__mkdir_p} %{buildroot}/%{environment_path}
+%{__mkdir_p} %{buildroot}/%{environment_path}/data
 
-%{__cp} -R * %{buildroot}/%{environment_path}/data
+%{__cp} -R * %{buildroot}/%{environment_path}/data/
 %{__mv} %{buildroot}/%{environment_path}/data/hiera.yaml %{buildroot}/%{environment_path}/
 
 %clean
