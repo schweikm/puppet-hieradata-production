@@ -37,7 +37,7 @@ Production Puppet modules
 
 %files
 %defattr(-,root,root,-)
-%{module_path}/*
+%{environment_path}/*
 
 
 
