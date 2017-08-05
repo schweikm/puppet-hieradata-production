@@ -21,6 +21,8 @@ Production Puppet modules
 %prep
 %setup -q
 
+%{__rm} *.spec
+%{__rm} -fr .tito
 
 %build
 
@@ -29,7 +31,8 @@ Production Puppet modules
 %{__rm} -fr %{buildroot}
 %{__mkdir_p} %{buildroot}/%{environment_path}
 
-%{__cp} -R * %{buildroot}/%{environment_path}/
+%{__cp} -R * %{buildroot}/%{environment_path}/data
+%{__mv} %{buildroot}/%{environment_path}/data/hiera.yaml %{buildroot}/%{environment_path}/
 
 %clean
 %{__rm} -fr %{buildroot}
