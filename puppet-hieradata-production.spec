@@ -1,7 +1,7 @@
-Name:		puppet-hieradata-squadx
+Name:		puppet-hieradata-production
 Version:	1.0
 Release:	1%{?dist}
-Summary:	Squad-X Puppet hieradata
+Summary:	Production Puppet hieradata
 
 Group:		Applications/Engineering
 License:	GPL
@@ -9,10 +9,10 @@ URL:		http://www.bit-sys.com
 Source0:	%{name}-%{version}.tar.gz
 
 Requires:	puppet-agent >= 5.0
-Requires:       puppet-modules-squadx
+Requires:   puppet-modules-production
 
 %define debug_package %{nil}
-%define environment_path /etc/puppetlabs/code/environments/squadx
+%define environment_path /etc/puppetlabs/code/environments/production
 
 %description
 Production Puppet modules
