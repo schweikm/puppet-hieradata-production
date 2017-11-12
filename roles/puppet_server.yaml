@@ -1,4 +1,8 @@
 ---
+
+profiles:
+  - 'profiles::core'
+
 ntp::servers:
   - 'server 0.rhel.pool.ntp.org'
   - 'server 1.rhel.pool.ntp.org'
