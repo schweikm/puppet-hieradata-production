@@ -32,7 +32,6 @@ Production Puppet modules
 %{__mkdir_p} %{buildroot}/%{environment_path}/data
 
 %{__cp} -R * %{buildroot}/%{environment_path}/data/
-%{__mv} %{buildroot}/%{environment_path}/data/hiera.yaml %{buildroot}/%{environment_path}/
 
 %clean
 %{__rm} -fr %{buildroot}
