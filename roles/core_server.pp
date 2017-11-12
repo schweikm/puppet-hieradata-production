@@ -1,2 +1,4 @@
 ---
 
+profiles:
+  - 'profiles::core'
