@@ -1,6 +1,2 @@
 ---
-ntp::servers:
-  - 'server 0.rhel.pool.ntp.org'
-  - 'server 1.rhel.pool.ntp.org'
-  - 'server 2.rhel.pool.ntp.org'
-  - 'server 3.rhel.pool.ntp.org'
+role: 'puppet_server'
