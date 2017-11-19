@@ -43,7 +43,7 @@ Production Puppet modules
 
 %post
 # since we can't deliver this file in place
-%{__mv} -f {environment_path}/hiera.yaml.real {environment_path}/hiera.yaml || :
+%{__mv} -f %{environment_path}/hiera.yaml.real %{environment_path}/hiera.yaml || :
 
 
 %files
