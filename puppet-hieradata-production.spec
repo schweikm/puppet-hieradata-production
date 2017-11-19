@@ -29,9 +29,9 @@ Production Puppet modules
 
 %install
 %{__rm} -fr %{buildroot}
-%{__mkdir_p} %{buildroot}/%{environment_path}/data
+%{__mkdir_p} %{buildroot}/%{environment_path}
 
-%{__cp} -R * %{buildroot}/%{environment_path}/data/
+%{__cp} -R * %{buildroot}/%{environment_path}/
 
 %clean
 %{__rm} -fr %{buildroot}
