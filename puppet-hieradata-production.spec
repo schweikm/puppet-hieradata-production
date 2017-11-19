@@ -1,6 +1,6 @@
 Name:		puppet-hieradata-production
 Version:	1.1
-Release:	1%{?dist}
+Release:	2%{?dist}
 Summary:	Production Puppet hieradata
 
 Group:		Applications/Engineering
@@ -59,6 +59,9 @@ fi
 
 
 %changelog
+* Sun Nov 19 2017 Marc Schweikert <schweikm@gmail.com> 1.1-2
+- Change to release tagger (schweikm@gmail.com)
+
 * Sun Nov 19 2017 Marc Schweikert <schweikm@gmail.com> 1.1-1
 - Don't use ghost, remove in postun (schweikm@gmail.com)
 - Update packaging (schweikm@gmail.com)
