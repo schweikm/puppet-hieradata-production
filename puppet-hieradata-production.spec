@@ -48,7 +48,8 @@ Production Puppet modules
 
 %files
 %defattr(-,root,root,-)
-%{environment_path}/*
+%{environment_path}/data
+%{environment_path}/hiera.yaml.real
 %ghost %{environment_path}/hiera.yaml
 
 
