@@ -33,7 +33,7 @@ Production Puppet modules
 %{__rm} -fr %{buildroot}
 %{__mkdir_p} %{buildroot}/%{environment_path}
 
-%{__mv} hiera.yaml hiera.yaml.rpm
+%{__cp} hiera.yaml hiera.yaml.real
 %{__cp} -R * %{buildroot}/%{environment_path}/
 
 
@@ -43,12 +43,13 @@ Production Puppet modules
 
 %post
 # since we can't deliver this file in place
-%{__mv} -f {environment_path}/hiera.yaml.rpm {environment_path}/hiera.yaml > /dev/null 2>&1 || :
+%{__mv} -f {environment_path}/hiera.yaml.real {environment_path}/hiera.yaml || :
 
 
 %files
 %defattr(-,root,root,-)
 %{environment_path}/*
+%ghost %{environment_path}/hiera.yaml
 
 
 %changelog
