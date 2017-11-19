@@ -23,6 +23,8 @@ Production Puppet modules
 
 %{__rm} *.spec
 %{__rm} -fr .tito
+%{__rm} -fr LICENSE
+
 
 %build
 
@@ -32,6 +34,7 @@ Production Puppet modules
 %{__mkdir_p} %{buildroot}/%{environment_path}
 
 %{__cp} -R * %{buildroot}/%{environment_path}/
+
 
 %clean
 %{__rm} -fr %{buildroot}
