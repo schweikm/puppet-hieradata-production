@@ -1,5 +1,5 @@
 Name:		puppet-hieradata-production
-Version:	1.0
+Version:	1.1
 Release:	1%{?dist}
 Summary:	Production Puppet hieradata
 
@@ -59,6 +59,14 @@ fi
 
 
 %changelog
+* Sun Nov 19 2017 Marc Schweikert <schweikm@gmail.com> 1.1-1
+- Don't use ghost, remove in postun (schweikm@gmail.com)
+- Update packaging (schweikm@gmail.com)
+- Fix spec error (schweikm@gmail.com)
+- ghost hiera.yaml (schweikm@gmail.com)
+- Indirectly deliver hiera.yaml (schweikm@gmail.com)
+- Don't deliver license (schweikm@gmail.com)
+- Change layout (schweikm@gmail.com)
 * Sun Nov 12 2017 Marc Schweikert <schweikm@gmail.com> 1.0-1
 - new package built with tito
 
