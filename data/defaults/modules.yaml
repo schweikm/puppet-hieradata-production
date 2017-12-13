@@ -1,0 +1,11 @@
+---
+
+###############################################################################
+# puppet
+
+puppet::common_loglevel: 'info'
+puppet::server: 'puppetserver.turbo.local'
+puppet::version: 'installed'
+
+puppet::agent::status: 'running'
+puppet::agent::enabled: true
