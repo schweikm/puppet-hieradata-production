@@ -13,7 +13,5 @@ defaults:
 hierarchy:
   - name: "Per-node data (yaml version)"
     path: "nodes/%{::fqdn}.yaml"
-  - name: "Role data"
-    path: "roles/%{role}.yaml"
   - name: "Common catch-all"
     path: "common.yaml"
