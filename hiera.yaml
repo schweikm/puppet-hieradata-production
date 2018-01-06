@@ -12,6 +12,6 @@ defaults:
 # make sure to include the file extension on path!
 hierarchy:
   - name: "Per-node data (yaml version)"
-    path: "nodes/%{::fqdn}.yaml"
+    path: "nodes/%{trusted.certname}.yaml"
   - name: "Common catch-all"
     path: "common.yaml"
