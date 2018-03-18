@@ -1,0 +1,5 @@
+---
+# Softiron Overdrive 1000
+# AArch64 CentOS 7
+
+role: 'core_server'
